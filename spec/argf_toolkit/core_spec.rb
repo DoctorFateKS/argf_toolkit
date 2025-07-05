@@ -1,0 +1,1 @@
+# Tests pour core.rb
