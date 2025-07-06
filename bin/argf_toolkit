@@ -1,1 +1,4 @@
-# Script CLI principal : point d'entrée utilisateur (chmod +x)
+#!/usr/bin/env ruby
+require_relative '../lib/argf_toolkit'
+
+ArgfToolkit::Core.run(ARGV)
