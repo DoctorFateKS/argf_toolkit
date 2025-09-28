@@ -1,8 +1,6 @@
 # ArgfToolkit
 
-TODO: Delete this and the text below, and describe your gem
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/argf_toolkit`. To experiment with that code, run `bin/console` for an interactive prompt.
+A Swiss-army knife for text & binary streams
 
 ## Installation
 
@@ -22,7 +20,26 @@ gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
 
 ## Usage
 
-TODO: Write usage instructions here
+ArgfToolkit has three modes to execute operations:
+
+### Transformer Mode:
+
+- Apply filters (regex replacements, encoding conversions, binary scrubbing, hex dumps).
+- Streamline large file transformations with in-place editing support.
+
+### Sanitizer Mode:
+
+- Detect and redact secrets/PII in logs.
+- Build and persist indices (line → byte offsets, timestamps).
+- Resume processing using seek/pos.
+- Handle non-blocking input (tail-like).
+
+### Explorer Mode:
+
+- Interactive console to browse files as text, bytes, or Unicode codepoints.
+- Inspect encodings, offsets, and line numbers.
+- Patch files in-place or export selections.
+- Hex/unicode view toggling, cursor seeking, bookmarks.
 
 ## Development
 
